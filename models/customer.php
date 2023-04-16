@@ -70,14 +70,18 @@
     public static function deletecustomer($id) {
       $db = Db::getInstance();
       // we make sure $id is an integer
-      $id = intval($id);
-      $req = $db->prepare('DELETE FROM CUSTOMERS WHERE CustomerID = :id');
-      // the query was prepared, now we replace :id with our actual $id value
-      if ($req->execute(array('id' => $id))) {
-          return "USPJESNO brisanje";
-      } else {
-          return "NESPJESNO brisanje";
-      }
+      //$id = intval($id);
+      $sql="DELETE FROM CUSTOMERS WHERE CustomerID ='$id'";
+
+
+      if ($db->query($sql) == TRUE){
+        //if (1==2){
+            $rez="USPJESNO brisanje";
+          }
+            else {
+             $rez="NESPJESNO brisanje";;
+            }
+            return $rez;
   }
   
     

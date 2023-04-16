@@ -61,7 +61,7 @@
         return call('pages', 'error');
     
       // we use the given id to delete the right customer
-      $customers = Customer::deletecustomer($_GET['id']);
+      $customer = Customer::deletecustomer($_GET['id']);
       require_once('views/customer/delete.php');
     }
     

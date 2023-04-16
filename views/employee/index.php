@@ -63,12 +63,6 @@
       <th>Hire Date</th>
       <th>Address</th>
       <th>City</th>
-      <th>Region</th>
-      <th>Postal Code</th>
-      <th>Country</th>
-      <th>Home Phone</th>
-      <th>Extension</th>
-      <th>Reports To</th>
       <th>Actions</th>
     </tr>
     <?php foreach($employees as $employee) { ?>
@@ -82,12 +76,6 @@
       <td><?php echo $employee->HireDate; ?></td>
       <td><?php echo $employee->Address; ?></td>
       <td><?php echo $employee->City; ?></td>
-      <td><?php echo $employee->Region; ?></td>
-      <td><?php echo $employee->PostalCode; ?></td>
-      <td><?php echo $employee->Country; ?></td>
-      <td><?php echo $employee->HomePhone; ?></td>
-      <td><?php echo $employee->Extension; ?></td>
-      <td><?php echo $employee->ReportsTo; ?></td>
       <td class="actions">
       <a href="?controller=employees&action=show&id=<?php echo $employee->EmployeeID; ?>">Show</a>
       <a href="?controller=employees&action=edit&id=<?php echo $employee->EmployeeID; ?>">Edit</a>

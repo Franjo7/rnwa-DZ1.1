@@ -86,7 +86,7 @@
       <td><?php echo $order->ShipCountry; ?></td>
       <td class="actions">
       <a href="?controller=orders&action=show&id=<?php echo $order->OrderID; ?>">Show</a>
-      <a href="?controller=orders&action=edit&id=<?php echo $order->OrderID; ?>">Edit</a>
+      <a href="?controller=orders&action=update&id=<?php echo $order->OrderID; ?>">Update</a>
       <a href="?controller=orders&action=delete&id=<?php echo $order->OrderID; ?>">Delete</a>
     </td>
   </tr>

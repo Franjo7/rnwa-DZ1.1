@@ -26,9 +26,9 @@
 
   // we're adding an entry for the new controller and its actions
   $controllers = array('pages'     => ['home', 'error'],
-                       'customers' => ['index', 'show', 'deletecustomer'],
-                       'employees'  => ['index', 'show','delete'],
-                       'orders'     => ['index', 'show', 'delete']);
+                       'customers' => ['index', 'show', 'update', 'deletecustomer', 'create'],
+                       'employees'  => ['index', 'show','delete', 'update', 'create'],
+                       'orders'     => ['index', 'show', 'delete', 'update', 'create']);
 
   if (array_key_exists($controller, $controllers)) {
     if (in_array($action, $controllers[$controller])) {

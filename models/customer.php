@@ -28,6 +28,98 @@
       $this->Fax          = $Fax;
     }
 
+    // getter methods
+    public function getCustomerID() {
+      return $this->CustomerID;
+  }
+
+  public function getCompanyName() {
+      return $this->CompanyName;
+  }
+
+  public function getContactName() {
+      return $this->ContactName;
+  }
+
+  public function getContactTitle() {
+      return $this->ContactTitle;
+  }
+
+  public function getAddress() {
+      return $this->Address;
+  }
+
+  public function getCity() {
+      return $this->City;
+  }
+
+  public function getRegion() {
+      return $this->Region;
+  }
+
+  public function getPostalCode() {
+      return $this->PostalCode;
+  }
+
+  public function getCountry() {
+      return $this->Country;
+  }
+
+  public function getPhone() {
+      return $this->Phone;
+  }
+
+  public function getFax() {
+      return $this->Fax;
+  }
+
+  // setter methods
+  public function setCustomerID($CustomerID) {
+      $this->CustomerID = $CustomerID;
+  }
+
+  public function setCompanyName($CompanyName) {
+      $this->CompanyName = $CompanyName;
+  }
+
+  public function setContactName($ContactName) {
+      $this->ContactName = $ContactName;
+  }
+
+  public function setContactTitle($ContactTitle) {
+      $this->ContactTitle = $ContactTitle;
+  }
+
+  public function setAddress($Address) {
+      $this->Address = $Address;
+  }
+
+  public function setCity($City) {
+      $this->City = $City;
+  }
+
+  public function setRegion($Region) {
+      $this->Region = $Region;
+  }
+
+  public function setPostalCode($PostalCode) {
+      $this->PostalCode = $PostalCode;
+  }
+
+  public function setCountry($Country) {
+      $this->Country = $Country;
+  }
+
+  public function setPhone($Phone) {
+      $this->Phone = $Phone;
+  }
+
+  public function setFax($Fax) {
+      $this->Fax = $Fax;
+  }
+
+    
+
     // read all records
     public static function all() {
       $list = [];

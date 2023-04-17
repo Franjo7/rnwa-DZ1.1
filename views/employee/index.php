@@ -78,7 +78,7 @@
       <td><?php echo $employee->City; ?></td>
       <td class="actions">
       <a href="?controller=employees&action=show&id=<?php echo $employee->EmployeeID; ?>">Show</a>
-      <a href="?controller=employees&action=edit&id=<?php echo $employee->EmployeeID; ?>">Edit</a>
+      <a href="?controller=employees&action=update&id=<?php echo $employee->EmployeeID; ?>">Update</a>
       <a href="?controller=employees&action=delete&id=<?php echo $employee->EmployeeID; ?>">Delete</a>
       </td>
 

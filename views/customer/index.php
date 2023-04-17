@@ -72,7 +72,7 @@
       <td><?php echo $customer->Country; ?></td>
       <td class="actions">
         <a href="?controller=customers&action=show&id=<?php echo $customer->CustomerID; ?>">Show</a>
-        <a href="?controller=customers&action=edit&id=<?php echo $customer->CustomerID; ?>">Edit</a>
+        <a href="?controller=customers&action=update&id=<?php echo $customer->CustomerID; ?>">Update</a>
         <a href="?controller=customers&action=deletecustomer&id=<?php echo $customer->CustomerID; ?>">Delete</a>
       </td>
     </tr>

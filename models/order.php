@@ -36,6 +36,120 @@ class Order {
     }
 
 
+    // getter methods
+public function getOrderID() {
+  return $this->OrderID;
+  }
+  
+  public function getCustomerID() {
+  return $this->CustomerID;
+  }
+  
+  public function getEmployeeID() {
+  return $this->EmployeeID;
+  }
+  
+  public function getOrderDate() {
+  return $this->OrderDate;
+  }
+  
+  public function getRequiredDate() {
+  return $this->RequiredDate;
+  }
+  
+  public function getShippedDate() {
+  return $this->ShippedDate;
+  }
+  
+  public function getShipVia() {
+  return $this->ShipVia;
+  }
+  
+  public function getFreight() {
+  return $this->Freight;
+  }
+  
+  public function getShipName() {
+  return $this->ShipName;
+  }
+  
+  public function getShipAddress() {
+  return $this->ShipAddress;
+  }
+  
+  public function getShipCity() {
+  return $this->ShipCity;
+  }
+  
+  public function getShipRegion() {
+  return $this->ShipRegion;
+  }
+  
+  public function getShipPostalCode() {
+  return $this->ShipPostalCode;
+  }
+  
+  public function getShipCountry() {
+  return $this->ShipCountry;
+  }
+  
+  // setter methods
+  public function setOrderID($OrderID) {
+  $this->OrderID = $OrderID;
+  }
+  
+  public function setCustomerID($CustomerID) {
+  $this->CustomerID = $CustomerID;
+  }
+  
+  public function setEmployeeID($EmployeeID) {
+  $this->EmployeeID = $EmployeeID;
+  }
+  
+  public function setOrderDate($OrderDate) {
+  $this->OrderDate = $OrderDate;
+  }
+  
+  public function setRequiredDate($RequiredDate) {
+  $this->RequiredDate = $RequiredDate;
+  }
+  
+  public function setShippedDate($ShippedDate) {
+  $this->ShippedDate = $ShippedDate;
+  }
+  
+  public function setShipVia($ShipVia) {
+  $this->ShipVia = $ShipVia;
+  }
+  
+  public function setFreight($Freight) {
+  $this->Freight = $Freight;
+  }
+  
+  public function setShipName($ShipName) {
+  $this->ShipName = $ShipName;
+  }
+  
+  public function setShipAddress($ShipAddress) {
+  $this->ShipAddress = $ShipAddress;
+  }
+  
+  public function setShipCity($ShipCity) {
+  $this->ShipCity = $ShipCity;
+  }
+  
+  public function setShipRegion($ShipRegion) {
+  $this->ShipRegion = $ShipRegion;
+  }
+  
+  public function setShipPostalCode($ShipPostalCode) {
+  $this->ShipPostalCode = $ShipPostalCode;
+  }
+  
+  public function setShipCountry($ShipCountry) {
+  $this->ShipCountry = $ShipCountry;
+  }
+
     // read all records
   public static function all() {
     $list = [];

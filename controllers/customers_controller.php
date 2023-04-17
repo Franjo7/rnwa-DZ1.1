@@ -24,29 +24,31 @@
       }
     }
 
-    public function update() {
-      if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $customers = Customer::find($_POST['customer_id']);
-        $customer->setCompanyName($_POST['company_name']);
-        $customer->setContactName($_POST['contact_name']);
-        $customer->setContactTitle($_POST['contact_title']);
-        $customer->setAddress($_POST['address']);
-        $customer->setCity($_POST['city']);
-        $customer->setRegion($_POST['region']);
-        $customer->setPostalCode($_POST['postal_code']);
-        $customer->setCountry($_POST['country']);
-        $customer->setPhone($_POST['phone']);
-        $customer->setFax($_POST['fax']);
-        $customer->save();
-        header('Location: index.php?controller=customers&action=index');
-      } else {
-        if (!isset($_GET['id'])) {
-          return call('pages', 'error');
-        }
-        $customers = Customer::find($_GET['id']);
-        require_once('views/customer/update.php');
-      }
+    
+public function update() {
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $customers = Customer::find($_POST['customer_id']);
+    $customer->setCompanyName($_POST['company_name']);
+    $customer->setContactName($_POST['contact_name']);
+    $customer->setContactTitle($_POST['contact_title']);
+    $customer->setAddress($_POST['address']);
+    $customer->setCity($_POST['city']);
+    $customer->setRegion($_POST['region']);
+    $customer->setPostalCode($_POST['postal_code']);
+    $customer->setCountry($_POST['country']);
+    $customer->setPhone($_POST['phone']);
+    $customer->setFax($_POST['fax']);
+    $customer->save();
+    header('Location: index.php?controller=customers&action=index');
+  } else {
+    if (!isset($_GET['id'])) {
+      return call('pages', 'error');
     }
+    $customer = Customer::find($_GET['id']);
+    require_once('views/customer/update.php');
+  }
+}
+
 
     public function deletecustomer() {
       if (!isset($_GET['id']))

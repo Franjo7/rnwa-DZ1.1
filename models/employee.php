@@ -37,6 +37,142 @@ class Employee {
       $this->ReportsTo = $ReportsTo;
     }
 
+    // getter methods
+public function getEmployeeID() {
+return $this->EmployeeID;
+}
+
+public function getLastName() {
+return $this->LastName;
+}
+
+public function getFirstName() {
+return $this->FirstName;
+}
+
+public function getTitle() {
+return $this->Title;
+}
+
+public function getTitleOfCourtesy() {
+return $this->TitleOfCourtesy;
+}
+
+public function getBirthDate() {
+return $this->BirthDate;
+}
+
+public function getHireDate() {
+return $this->HireDate;
+}
+
+public function getAddress() {
+return $this->Address;
+}
+
+public function getCity() {
+return $this->City;
+}
+
+public function getRegion() {
+return $this->Region;
+}
+
+public function getPostalCode() {
+return $this->PostalCode;
+}
+
+public function getCountry() {
+return $this->Country;
+}
+
+public function getHomePhone() {
+return $this->HomePhone;
+}
+
+public function getExtension() {
+return $this->Extension;
+}
+
+
+public function getNotes() {
+return $this->Notes;
+}
+
+public function getReportsTo() {
+return $this->ReportsTo;
+}
+
+
+// setter methods
+public function setEmployeeID($EmployeeID) {
+$this->EmployeeID = $EmployeeID;
+}
+
+public function setLastName($LastName) {
+$this->LastName = $LastName;
+}
+
+public function setFirstName($FirstName) {
+$this->FirstName = $FirstName;
+}
+
+public function setTitle($Title) {
+$this->Title = $Title;
+}
+
+public function setTitleOfCourtesy($TitleOfCourtesy) {
+$this->TitleOfCourtesy = $TitleOfCourtesy;
+}
+
+public function setBirthDate($BirthDate) {
+$this->BirthDate = $BirthDate;
+}
+
+public function setHireDate($HireDate) {
+$this->HireDate = $HireDate;
+}
+
+public function setAddress($Address) {
+$this->Address = $Address;
+}
+
+public function setCity($City) {
+$this->City = $City;
+}
+
+public function setRegion($Region) {
+$this->Region = $Region;
+}
+
+public function setPostalCode($PostalCode) {
+$this->PostalCode = $PostalCode;
+}
+
+public function setCountry($Country) {
+$this->Country = $Country;
+}
+
+public function setHomePhone($HomePhone) {
+$this->HomePhone = $HomePhone;
+}
+
+public function setExtension($Extension) {
+$this->Extension = $Extension;
+}
+
+
+
+public function setNotes($Notes) {
+$this->Notes = $Notes;
+}
+
+public function setReportsTo($ReportsTo) {
+$this->ReportsTo = $ReportsTo;
+}
+
+
+
 
     // read all records
   public static function all() {
